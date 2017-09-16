@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="20sp"
+    android:orientation="vertical"
+    android:background="@drawable/borders" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp" android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/loading"
+            android:id="@+id/downloadableVideoThumbnil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/DownloadAbleVideoTittle"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="5dp"
+            android:text="Johny Johny Yes Papa | Nurser..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RadioGroup
+        android:layout_marginTop="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+    android:orientation="vertical">
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/low"
+            android:text="Low Quality [240p]"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/med"
+            android:text="Medium Quality [360p]"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/hig"
+            android:text="High Quality [720p]"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+</RadioGroup>
+    <Button
+        android:clickable="false"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite"
+        android:text="Download"
+        android:layout_width="match_parent"
+        android:id="@+id/downloadVideoNow"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

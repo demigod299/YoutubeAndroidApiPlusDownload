@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Nursery Rhymes</string>
+    <string name="kidsRythm">Kids Rhymes</string>
+    <string name="nursryPoem">Nursery Poem</string>
+    <string name="LearnColorNames">Learn Color Names </string>
+    <string name="LearnAlphabets">Learn Alphabets </string>
+    <string name="LearnCounting">Learn Counting </string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <string name="KEY">AIzaSyD2spnk2XS98ZlaMGruiezPsH-m_lAE7ek</string>
+    <string name="playlist1">PL8287FCBE2B990D57</string>
+    <string name="playlist2">PLlvygdutm8blrdNxLtjgh4POlbAdEwHAd</string>
+    <string name="playlist3">PLlvygdutm8bmbdzIbaEhQHKfK-aTOQlMG</string>
+    <string name="playlist4">PLlvygdutm8bnwW1MgPgszYDArK7x53SBu</string>
+    <string name="playlist5">PLlvygdutm8bnR3uZrgibbkXZ6f3z4rWGi</string>
+
+
+
+
+</resources>

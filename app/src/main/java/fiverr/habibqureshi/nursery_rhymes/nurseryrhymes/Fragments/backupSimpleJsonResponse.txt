@@ -1,0 +1,121 @@
+
+                /*
+                RequestQueue queue = Volley.newRequestQueue(activity.getApplicationContext());
+                String url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=50&playlistId=" + PlayListID + "&key=" + Config.YOUTUBE_API_KEY;
+                StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+                        new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+
+                                try {
+                                    Gson gson=new Gson();
+                                    youtubeJsonReply reply=gson.fromJson(response,youtubeJsonReply.class);
+                                    TotalVideos=reply.getPageInfo().getTotalResults();
+                                    if (TotalVideos > 50)
+                                        TotalVideos = 50;
+                                    YouTubeVideosTittles = new String[TotalVideos];
+                                    YouTubeVideosID = new String[TotalVideos];
+                                    YouTubeVideosTumbnil = new String[TotalVideos];
+                                    List<Item> items=reply.getItems();
+                                    channelName=items.get(0).getSnippet().getChannelTitle();
+                                    CurrentYouTubeData=new youtubePlayListView.youtubeData(activity.getApplicationContext());
+                                    CurrentYouTubeData.ThumbNillPath = new String[TotalVideos];
+                                    for (int i = 0; i < TotalVideos; i++) {
+                                        YouTubeVideosTumbnil[i] =items.get(i).getSnippet().getThumbnails().getMedium().getUrl();
+                                        YouTubeVideosID[i] = items.get(i).getContentDetails().getVideoId();
+                                        YouTubeVideosTittles[i] =items.get(i).getSnippet().getTitle();
+                                        CurrentYouTubeData.ThumbNillPath[i] = "empty";
+                                    }
+                                    CurrentYouTubeData.ThumbNillLink = YouTubeVideosTumbnil;
+                                    CurrentYouTubeData.Tittle = YouTubeVideosTittles;
+                                    CurrentYouTubeData.PlayListID = PlayListID;
+                                    CurrentYouTubeData.VideoID = YouTubeVideosID;
+                                    CurrentYouTubeData.size = TotalVideos;
+                                CurrentYouTubeData.ChannelName = channelName;
+                                if (dataSource.Add(CurrentYouTubeData) < 0)
+                                    activity.displayMessage("Cant Store in DB");
+                                activity.cancleProgressMessage();
+                                displaylist();
+
+
+
+                                    JSONObject resp = new JSONObject(response); //json response
+                                    Log.e("response140", resp.toString());
+                                    JSONObject res;
+                                    TotalVideos = resp.getJSONObject("pageInfo").getInt("totalResults");
+                                    Log.e("TotalVideos", TotalVideos + "");
+                                    if (TotalVideos > 50)
+                                        TotalVideos = 50;
+                                    Log.e("TotalVideos", TotalVideos + "");
+                                    JSONArray res1;
+                                    res1 = resp.getJSONArray("items");
+                                    YouTubeVideosTittles = new String[TotalVideos];
+                                    YouTubeVideosID = new String[TotalVideos];
+                                    YouTubeVideosTumbnil = new String[TotalVideos];
+                                    channelName = res1.getJSONObject(0).getJSONObject("snippet").getString("channelTitle");
+//                                    Log.e("Youtube", channelName);
+                                    CurrentYouTubeData=new youtubePlayListView.youtubeData(activity.getApplicationContext());
+                                    CurrentYouTubeData.ThumbNillPath = new String[TotalVideos];
+                                    for (int i = 0; i < TotalVideos; i++) {
+                                        YouTubeVideosTumbnil[i] = res1.getJSONObject(i).getJSONObject("snippet").getJSONObject("thumbnails").getJSONObject("medium").getString("url");
+                                        YouTubeVideosID[i] = res1.getJSONObject(i).getJSONObject("contentDetails").getString("videoId");
+                                        YouTubeVideosTittles[i] = res1.getJSONObject(i).getJSONObject("snippet").getString("title");
+                                        CurrentYouTubeData.ThumbNillPath[i] = "empty";
+                                    }
+                                    CurrentYouTubeData.ThumbNillLink = YouTubeVideosTumbnil;
+                                    CurrentYouTubeData.Tittle = YouTubeVideosTittles;
+                                    CurrentYouTubeData.PlayListID = PlayListID;
+                                    CurrentYouTubeData.VideoID = YouTubeVideosID;
+                                    CurrentYouTubeData.size = TotalVideos;
+                                    CurrentYouTubeData.ChannelName = channelName;
+                                    if (dataSource.Add(CurrentYouTubeData) < 0)
+                                        activity.displayMessage("Cant Store in DB");
+                                    activity.cancleProgressMessage();
+                                    displaylist();*/
+                                /*} catch (JSONException e) {
+                                    e.printStackTrace();
+                                    Log.e("e", "error");
+                                }
+
+                            }
+                        }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                    }
+                });
+                queue.add(stringRequest);*/
+
+
+
+
+
+
+
+                   /* if(ytFiles.get(itag)==null)
+                    {
+                        itag=18;
+                        if(ytFiles.get(itag)==null) {
+                            itag = 17;
+                            if (ytFiles.get(itag) == null)
+                            {
+                                activity.cancleProgressMessage();
+                                activity.displayMessage("Download for this video is not available");
+                                shouldGOforDownload=false;
+                            }
+
+                        }
+                    }
+                    if(shouldGOforDownload) {
+                        activity.cancleProgressMessage();
+                        String downloadUrl = ytFiles.get(itag).getUrl();
+                        String fileName = CurrentPlayingVideoTitte + ".mp4";
+                        DownloadManager.Request request = new DownloadManager.Request(Uri.parse(downloadUrl));
+                        request.setTitle("Downloading");
+                        request.setDescription(CurrentPlayingVideoTitte);
+                        request.setVisibleInDownloadsUi(false);
+                        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, fileName);
+                        DownloadManager downloadManager = (DownloadManager)activity.getApplicationContext().getSystemService(Context.DOWNLOAD_SERVICE);
+                        downloadManager.enqueue(request);
+                    }*/
