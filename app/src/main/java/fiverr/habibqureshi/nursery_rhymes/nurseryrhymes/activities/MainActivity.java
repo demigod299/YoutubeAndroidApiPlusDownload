@@ -17,7 +17,7 @@ import fiverr.habibqureshi.nursery_rhymes.nurseryrhymes.Fragments.splash;
 import fiverr.habibqureshi.nursery_rhymes.nurseryrhymes.Fragments.youtubeListFragment;
 import fiverr.habibqureshi.nursery_rhymes.nurseryrhymes.Interfaces.DownloadButtonDisplayHelp;
 import fiverr.habibqureshi.nursery_rhymes.nurseryrhymes.R;
-
+//This app is created by Habibqureshi
 public class MainActivity extends AppCompatActivity implements YouTubePlayer.OnInitializedListener {
     FragmentManager fm;
     FragmentTransaction ft;
